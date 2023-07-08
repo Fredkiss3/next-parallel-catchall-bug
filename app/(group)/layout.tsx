@@ -1,3 +1,10 @@
+"use client";
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return children;
+  return (
+    <>
+      <p>nested layout - {Math.random()}</p>
+      <br />
+      {children}
+    </>
+  );
 }
